@@ -40,6 +40,7 @@ class App extends Component {
     this.setState({
       items: [],
     });
+    localStorage.setItem('todolists', JSON.stringify([]));
   };
 
   handleDelete = (id) => {
